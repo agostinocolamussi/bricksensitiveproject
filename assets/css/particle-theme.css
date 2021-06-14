@@ -1,9 +1,4 @@
 /**
- * Particle HTML Template V2
- * Theme CSS
- * Author: Dragan Milenkovic
- * Copyright - 2021 Skilltech Web Design - skilltechwebdesign.com
- * URL: https://themeforest.net/item/particle-modern-tech-startup-html-template/20078383?ref=Skilltech
  * --------------------------------------------------------------
  *  1. Page Transitions (priority)
  *  2. Page Preloader (priority)
@@ -582,6 +577,7 @@ div.spinn i:nth-child(7) {
  */
 
 nav a em {
+	position: fixed;
 	font-style: initial;
 	font-weight: 700;
 }
@@ -596,7 +592,7 @@ nav a em {
 @media all and (max-width: 1199px) {
 
 	.pa-mobile-main-logo {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 9999;
@@ -605,6 +601,7 @@ nav a em {
 	.pa-mobile-main-logo img {
 		height: 68px;
 		width: auto;
+		position: fixed;
 	}
 
 	body.hc-nav-open .pa-mobile-main-logo {
@@ -634,6 +631,7 @@ nav a em {
 	.hc-nav-trigger {
 		right: 20px;
 		z-index: 9999;
+		position: fixed; top:20; right:20;
 	}
 
 	a.hc-nav-trigger.toggle-open {
@@ -842,6 +840,7 @@ nav a em {
 
 	nav li a {
 		display: inline-block !important;
+		
 	}
 
 	li.custom-content.pa-mobile-menu-logo, 
@@ -3623,206 +3622,3 @@ section.pa-main-footer {
 
 }
 
-
-/*
- * 23. Dark Mode Switch
- * ====================
- */
-
-.lm-header label {
-	color: #c4cdda;
-	margin-bottom: 10px;
-}
-
-.lm-switch-container {
-	width: 100%;
-	margin-bottom: 15px;
-}
-
-.lm-switch {
-	position: relative;
-	width: 204px;
-	height: 48px;
-	margin: 0 auto;
-}
-
-.menu-light-mode-panel .lm-switch {
-	width: 131px;
-	height: 32px;
-}
-
-.lm-switch-back-light, 
-.lm-switch-back-dark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 204px;
-	height: 48px;
-	-webkit-transition: all 0.3s ease-in-out 0.05s;
-	-o-transition: all 0.3s ease-in-out 0.05s;
-	transition: all 0.3s ease-in-out 0.05s;
-	background-size: initial;
-	background-position: center;
-}
-
-.menu-light-mode-panel .lm-switch-back-light, 
-.menu-light-mode-panel .lm-switch-back-dark {
-	width: 131px;
-	height: 32px;
-}
-
-.lm-switch-back-light {
-	background: url(../images/dark-mode-switcher-background-light.png);
-	opacity: 1;
-}
-
-.menu-light-mode-panel .lm-switch-back-light {
-	background: url(../images/mini-dark-mode-switcher-background-light.png);
-	opacity: 1;
-}
-
-.lm-switch-back-dark {
-	background: url(../images/dark-mode-switcher-background-dark.png);
-	opacity: 0;
-}
-
-.menu-light-mode-panel .lm-switch-back-dark {
-	background: url(../images/mini-dark-mode-switcher-background-dark.png);
-	opacity: 0;
-}
-
-.pa-dark-mode .lm-switch-back-light {
-	opacity: 0;
-}
-
-.pa-dark-mode .lm-switch-back-dark {
-	opacity: 1;
-}
-
-.lm-button, 
-.lm-indicator {
-	width: 96px;
-	height: 48px;
-}
-
-.menu-light-mode-panel .lm-button, 
-.menu-light-mode-panel .lm-indicator {
-	width: 64px;
-	height: 32px;
-}
-
-.lm-button {
-	cursor: pointer;
-}
-
-.lm-button.go-light, 
-.menu-light-mode-panel .lm-button.go-light {
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	background-size: initial;
-	background-position: center;
-}
-
-.lm-button.go-light {
-	background: url(../images/dark-mode-switcher-button-go-light-v2.png);
-}
-
-.menu-light-mode-panel .lm-button.go-light {
-	background: url(../images/mini-dark-mode-switcher-button-go-light-v2.png);
-}
-
-.lm-button.go-dark, 
-.menu-light-mode-panel .lm-button.go-dark {
-	position: absolute;
-	right: 0;
-	top: 0;
-	opacity: 0.69;
-	background-size: initial;
-	background-position: center;
-}
-
-.lm-button.go-dark {
-	background: url(../images/dark-mode-switcher-button-go-dark.png);
-}
-
-.menu-light-mode-panel .lm-button.go-dark {
-	background: url(../images/mini-dark-mode-switcher-button-go-dark.png);
-}
-
-.pa-dark-mode .lm-button.go-dark, 
-.pa-dark-mode .lm-button.go-dark:hover {
-	opacity: 0;
-}
-
-.pa-dark-mode .lm-button.go-light {
-	opacity: 0.49;
-}
-
-.pa-dark-mode .lm-button.go-light:hover, 
-.lm-button.go-dark:hover {
-	opacity: 1;
-}
-
-.lm-indicator {
-	-webkit-transition: all 0.3s ease-in-out 0.05s;
-	-o-transition: all 0.3s ease-in-out 0.05s;
-	transition: all 0.3s ease-in-out 0.05s;
-}
-
-.lm-indicator.light-on, 
-.menu-light-mode-panel .lm-indicator.light-on {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 1;
-	background-size: initial;
-	background-position: center;
-}
-
-.lm-indicator.light-on {
-	background: url(../images/dark-mode-switcher-on-indicator-light.png);
-}
-
-.menu-light-mode-panel .lm-indicator.light-on {
-	background: url(../images/mini-dark-mode-switcher-on-indicator-light.png);
-}
-
-.lm-indicator.dark-on, 
-.menu-light-mode-panel .lm-indicator.dark-on {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	background-size: initial;
-	background-position: center;
-}
-
-.lm-indicator.dark-on {
-	background: url(../images/dark-mode-switcher-on-indicator-dark-v2.png);
-}
-
-.menu-light-mode-panel .lm-indicator.dark-on {
-	background: url(../images/mini-dark-mode-switcher-on-indicator-dark-v2.png);
-}
-
-.pa-dark-mode .lm-indicator.light-on {
-	opacity: 0;
-	left: 108px;
-}
-
-.pa-dark-mode .menu-light-mode-panel .lm-indicator.light-on {
-	opacity: 0;
-	left: 67px;
-}
-
-.pa-dark-mode .lm-indicator.dark-on {
-	opacity: 1;
-	left: 108px;
-}
-
-.pa-dark-mode .menu-light-mode-panel .lm-indicator.dark-on {
-	opacity: 1;
-	left: 67px;
-}

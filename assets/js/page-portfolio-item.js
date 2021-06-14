@@ -139,7 +139,7 @@ $(document).ready(function () {
 	});
 	$(".animated-text-effect2").typed({ 
 		// Enter your texts here, these texts are applied to dark homepages
-		strings: ["Industria^"],
+		strings: ["Industria 4.0^"],
 		contentType: "text", 
 		typeSpeed: 30, 
 		loop: false, 

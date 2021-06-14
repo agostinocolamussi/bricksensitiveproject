@@ -1,9 +1,5 @@
 /**
- * Particle HTML Template V2 002
- * Theme JS
- * Author: Dragan Milenkovic
- * Copyright - 2021 Skilltech Web Design - skilltechwebdesign.com
- * URL: https://themeforest.net/item/particle-modern-tech-startup-html-template/20078383?ref=Skilltech
+
  */
 
 $(document).ready(function () {
